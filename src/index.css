@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+}
+
+.calculator {
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-columns: min(7rem, auto) repeat(5, 6rem);
+  background-color: aliceblue;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.calculator__screen {
+  grid-column: 1/-1;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
